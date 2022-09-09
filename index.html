@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="body">
+    <div id="titulo">
+        <h1>Seja Bem vindo: Mude a Cor do Background</h1>
+    </div>
+    <div class="button">
+        <div class="buttons-geral">
+            <button onclick="background(this)">Background</button>
+        </div>
+        <!--container geral -->
+        <div id="show" class="hide">
+            <!--container conteudo-->
+            <div id="content-colors" class="slide-in-top">
+                <button onclick="preto()">Preto</button>
+                <button onclick="rosa()">Rosa</button>
+                <button onclick="verde()">Verde</button>
+                <div class="buttons-geral">
+                    <button onclick="removeColor()">Remover</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

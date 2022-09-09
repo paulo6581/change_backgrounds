@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+body {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+} 
+.background-image {
+    background-image: url(../images/imagefuturist.jpg);
+    color: #FFF;
+}
+.hide-image {
+    background-image: none;
+    color: #000;
+}
+#titulo {
+    margin-bottom: 30px;
+}
+/*container - button*/
+.button {
+    margin: auto;
+    width: 50vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+button {
+    cursor: pointer;
+    width: 15.24vw;
+    height: 50px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.buttons-geral button {
+    width: 48vw;
+}
+.hide {
+    display: none
+}
+.preto {
+    background-color: #000;
+    color: #FFF;
+}
+.rosa {
+    background-color: #FF69B4;
+    color: #000;
+}
+.verde {
+    background-color: #00FA9A;
+    color: #000;
+}
+
+/*Animation*/
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(1000px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.slide-in-top {
+    animation: slide-in-top 0.6s linear;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@keyframes slide-in-bottom {
+        0% {
+            transform: translateX(1000px);
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+}
+.slide-in-bottom {
+    animation: slide-in-bottom 0.6s linear;
+    background-color: rgba(0, 0, 0, 0.5);
+}
